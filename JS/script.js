@@ -20,7 +20,8 @@ const signUp = e => {
             "pwd":pwd })
         localStorage.setItem('users', JSON.stringify(user_records));
         alert("Account Created.\nPlease Sign In to continue.");
-    7}
+        window.location.href="signin.html"
+    }
     e.preventDefault();
 }
 
