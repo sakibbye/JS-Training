@@ -1,21 +1,103 @@
-<html>
-    <head>
-        <title>
-            Add Book 
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../CSS/style_profile.css">
-      </head>
+<!doctype html>
+<html lang="en">
 
-      
-      <body>
-        <ul>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="addBook.html">Add Book</a></li>
-          <li style="float:right"><a href="signin.html">Logout</a></li>
-        </ul>
-      
-      </body>
-      <script type="text/javascript" src="../JS/logout.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Add Book</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="profile.html">Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Add Book <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="message"></div>
+
+
+    <div class="container my-3">
+        <h1>Add Book</h1>
+        <hr>
+        <form id="libraryForm">
+            <div class="form-group row">
+                <label for="bookName" class="col-sm-2 col-form-label">Book Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bookName" placeholder="Book Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Author" class="col-sm-2 col-form-label">Author</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="author" placeholder="Author">
+                </div>
+            </div>
+            <div class="form-group row">
+              <label for="ISBN" class="col-sm-2 col-form-label">ISBN Number</label>
+              <div class="col-sm-10">
+                  <input type="number" class="form-control" id="isbn" placeholder="ISBN Number">
+              </div>
+           </div>
+           <div class="form-group row">
+             <label for="Price" class="col-sm-2 col-form-label">Price</label>
+             <div class="col-sm-10">
+                 <input type="number" class="form-control" id="price" placeholder="Price">
+             </div>
+           </div>
+           <div class="custom-file">
+             <input type="file" src="" class="custom-file-input" id="cover">
+             <label class="custom-file-label" for="Cover">Choose Cover</label>
+           </div>
+
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" onclick="addBook(event)" class="btn btn-primary">Add Book</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="table">
+            <h1>Your books</h1>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">ISBN No.</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody id='tableBody'></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/addBook.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>
