@@ -3,7 +3,7 @@ let name=localStorage.getItem('name')?localStorage.getItem('name'):''
 console.log(name);
 if(name=='')
 {
-    alert('Please Login');
+    console.log('Please Login');
     window.location.href="signin.html";
 }
 

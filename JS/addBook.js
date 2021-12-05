@@ -1,11 +1,3 @@
-let name=localStorage.getItem('name')?localStorage.getItem('name'):''
-console.log(name);
-if(name=='')
-{
-    alert('Please Login');
-    window.location.href="signin.html";
-}
-
 document.querySelector("#cover").addEventListener("change", function(){
     var reader = new FileReader();
 

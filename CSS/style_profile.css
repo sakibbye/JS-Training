@@ -21,7 +21,7 @@ h2 {
   }
 
 span {
-	color: #FF4B2B;
+	color: #5cb85c;
   }
 
 p {
@@ -52,8 +52,8 @@ input {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #5cb85c;
+	background-color: #5cb85c;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -66,7 +66,7 @@ button {
 button:hover {
 	transform: scale(0.95);
     background-color:#FFFFFF;
-    color: #FF4B2B;
+    color: #5cb85c;
     transition: 150ms ease-in-out;
   }
 
@@ -97,5 +97,5 @@ li a {
   }
 
 li a:hover {
-	background-color: #FF4B2B;
+	background-color: #5cb85c;
   }
