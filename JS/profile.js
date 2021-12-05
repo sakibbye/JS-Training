@@ -4,7 +4,7 @@ console.log(name);
 if(name=='')
 {
     console.log('Please Login');
-    window.location.href="signin.html";
+    window.location.href="index.html";
 }
 
 let email=localStorage.getItem('email');
@@ -14,5 +14,5 @@ document.getElementById("email").innerHTML = email;
 function logout() {
     localStorage.removeItem('name');
     localStorage.removeItem('email');
-    window.location.href="signin.html";
+    window.location.href="index.html";
 }    

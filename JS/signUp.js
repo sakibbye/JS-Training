@@ -26,7 +26,7 @@ const signUp = e => {
             "pwd":pwd })
         localStorage.setItem('users', JSON.stringify(user_records));
         alert("Account Created.\nPlease Sign In to continue.");
-        window.location.href="signin.html"
+        window.location.href="index.html"
     }
     e.preventDefault();
 }
