@@ -8,11 +8,11 @@ if(name=='')
 }
 
 let email=localStorage.getItem('email');
-document.getElementById("name").innerHTML = name;
-document.getElementById("email").innerHTML = email;
+//document.getElementById("name").innerHTML = name;
+//document.getElementById("email").innerHTML = email;
 
 function logout() {
     localStorage.removeItem('name');
     localStorage.removeItem('email');
     window.location.href="index.html";
-}    
+}
